@@ -1,94 +1,65 @@
-readme:
-  title: "React Vite Redux CRUD Dashboard"
+# React Vite Redux CRUD Dashboard
 
-  description: |
-    A React application built using Vite that demonstrates:
-    - Fetching data from a public GET API
-    - State management using Redux Toolkit
-    - Full CRUD operations (Create, Read, Update, Delete)
-    - Displaying data in a dashboard table
+## Objective
+To create a React application using **Vite** that fetches data from a public API, stores it in **Redux Toolkit**, and performs **CRUD operations**.
 
-    This project is developed as part of an academic assignment.
+---
 
-  technologies:
-    - React (Vite)
-    - Redux Toolkit
-    - React Redux
-    - Axios
-    - JavaScript (ES6+)
+## Technologies Used
+- React (Vite)
+- Redux Toolkit
+- React Redux
+- Axios
+- JavaScript
 
-  api:
-    name: "JSONPlaceholder Users API"
-    url: "https://jsonplaceholder.typicode.com/users"
-    note: >
-      This is a mock API. Create, Update, and Delete operations
-      are handled locally using Redux state.
+---
 
-  features:
-    - Fetch users from API (GET)
-    - Store API response in Redux store
-    - Add new users (Create)
-    - Edit existing users (Update)
-    - Delete users (Delete)
-    - Display users in a table (Read)
-    - Loading and error handling
-    - Clean and scalable project structure
+## API Used
+https://jsonplaceholder.typicode.com/users
 
-  project_structure: |
-    src/
-    │── app/
-    │   └── store.js
-    │
-    │── features/
-    │   └── users/
-    │       ├── userSlice.js
-    │       └── userService.js
-    │
-    │── components/
-    │   └── UserTable.jsx
-    │
-    │── App.jsx
-    │── main.jsx
+---
 
-  run_locally:
-    steps:
-      - step: "Clone the repository"
-        command: |
-          git clone <your-repository-url>
-          cd redux-crud-dashboard
+## Features Implemented
+- Fetch data from GET API
+- Store data in Redux store
+- Create, Read, Update, Delete (CRUD)
+- Display data in dashboard table
+- Loading and error handling
 
-      - step: "Install dependencies"
-        command: |
-          npm install
+---
 
-      - step: "Start development server"
-        command: |
-          npm run dev
+## Project Structure
+src/
+├─ app/store.js
+├─ features/users/
+├─ components/UserTable.jsx
+├─ App.jsx
+└─ main.jsx
 
-      - step: "Open in browser"
-        url: "http://localhost:5173"
+---
 
-  crud_operations:
-    create: "Add a new user to Redux store"
-    read: "Fetch and display users from API"
-    update: "Edit user details using Redux"
-    delete: "Remove user from Redux store"
+## Steps to Run the Project
+1. Clone the repository  
+git clone <repo-url>
 
-  assignment_requirements:
-    - Fetch data using GET API
-    - Use Redux Toolkit for state management
-    - Implement CRUD operations
-    - Display data in dashboard table
-    - Handle loading and error states
-    - Maintain clean project structure
-    - Compatible with Vite + React
+2. Install dependencies  
+npm install
 
-  submission:
-    instructions:
-      - Push project to GitHub
-      - Share GitHub repository link
-      - Include this README file
+3. Run the project  
+npm run dev
 
-  author:
-    name: "Jnanjyoti Bhunia"
+4. Open browser:  
+http://localhost:5173
+
+---
+
+## CRUD Summary
+| Operation | Description |
+|--------|------------|
+| Create | Add user |
+| Read | Fetch & display users |
+| Update | Edit user |
+| Delete | Remove user |
+
+---
 
